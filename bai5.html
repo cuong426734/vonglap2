@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <label htmlFor="in12">Số tiền vay: </label>
+    <input type="text" id="in12"> VND<br>
+        <label htmlFor="in12_1">Lãi xuất: </label><input type="text" id="in12_1"> %<br>
+        <label htmlFor="in12_2">thời hạn: </label><input type="text" id="in12_2"> tháng<br>
+        <input type="button" value="Chạy" onClick="b12()">
+            <p id="kqb12">.</p>
+<script>
+    function b12() {
+        let tienVay=+document.getElementById("in12").value;
+        let laiXuat=+document.getElementById("in12_1").value;
+        let thoiHan=+document.getElementById("in12_2").value;
+        document.getElementById("kqb12").innerText="TRỐN";
+    }
+</script>
+</body>
+</html>
